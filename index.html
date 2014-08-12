@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="img/uavLogo.png">
+    <title>Caltech UAV Engineers</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/uav.css" rel="stylesheet">
+    <link href="css/jquery.gridster.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400|Raleway:400,100,200,300' rel='stylesheet' type='text/css'>
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a class="shimmer" href="#top">UAV Engineers</a>
+            </li>
+            <li>
+                <a href="#top">Home</a>
+            </li>
+
+            <li>
+                <a href="#portfolio">Projects</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+            
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+        <!-- Header -->
+        <div id="top" class="header section active">
+            <div class="text-vertical-center">
+
+                <h1 class="shimmer">UAV Engineers</h1>
+
+                <h3><a target="blank" id="caltech" href="https://www.caltech.edu/">California Institute of Technology</a></h3>
+                <br>
+                <a id="uavBox" href="#portfolio" class="btn btn-dark btn-lg"> <img id="uav" class="btn btn-dark btn-lg" src="img/uavLogo_white.png"/></a>
+
+                
+
+            </div>
+        </div>
+
+
+       
+        <!-- Banner -->
+
+        <aside class="callout">
+            <div class="text-vertical-left-top">
+                <h1>Think. Design. Code. </h1>
+            </div>
+        </aside>
+
+
+
+
+        <!-- Portfolio -->
+        <div id="portfolio" class="portfolio section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                       
+                    </div>
+                    <!-- /.col-lg-10 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+
+
+
+
+        <!-- About -->
+        <div id="about" class="about section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                       
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+
+       
+
+        
+   
+        <!-- Map -->
+        <div id="contact" class="map section">
+            
+        </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container section">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Start Bootstrap</strong>
+                    </h4>
+                    <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">name@example.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.transit.min.js"></script>
+    <script src="js/jquery.gridster.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    
+
+    // Scrolls to the selected menu item on the page
+   $(function() {
+
+        $('a[href*=#]:not([href=#top],[href=#])').hover(function(){ 
+            $("#uav").css({
+               '-ms-transform': 'rotate(90deg)',
+                '-webkit-transform': 'rotate(90deg)', 
+                'transform': 'rotate(90deg)', 
+                '-webkit-transition': '.3s ease-in',
+                '-moz-transition': '.3s ease-in',
+                '-o-transition': '.3s ease-in',
+                'transition': '.3s ease-in',
+            });
+        }, function(){
+            $("#uav").css({
+               '-ms-transform': 'rotate(0deg)',
+                '-webkit-transform': 'rotate(0deg)', 
+                'transform': 'rotate(0deg)', 
+                '-webkit-transition': '.3s ease-in',
+                '-moz-transition': '.3s ease-in',
+                '-o-transition': '.3s ease-in',
+                'transition': '.3s ease-in',
+            });
+        });
+        $('a[href*=#]:not([href=#])').click(function() {
+            $('#uavBox')
+            .transition({y: '+=700'}, 700, 'ease');
+            setTimeout(function(){
+                $('#uavBox').transition({rotate: '-90deg'}, 200, 'ease');
+                $('#uavBox').transition({y: '-=700'}, 500, 'ease');
+                $('#uavBox').transition({rotate: '0deg'}, 200, 'ease');
+            }, 700);
+        });
+ 
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+ 
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1200);
+
+                    return false;
+                }
+            }
+        });
+        
+    });
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
