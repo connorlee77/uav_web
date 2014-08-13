@@ -86,28 +86,20 @@ body{
 
 body {
     font-family: "Raleway", "Quicksand", sans-serif;
-    overflow-x:hidden;
 }
 
 .text-vertical-left-top {
     position: relative;
     display: table-cell;
     top: 20%;
-    left: 10%;
     text-align: left;
     vertical-align: top;
     width: 100%;
     margin: 0;
     padding: 0;
-    font-size: 80px;
-    font-weight: 100;
-    font-family: 'Quicksand';
-    font-weight: 300;
+    padding-left: 10%;
 }
-
-.text-vertical-left-top h1 {
-    margin: 0;
-    padding: 0;
+.text-vertical-left-top h1{ 
     font-size: 80px;
     font-weight: 100;
     font-family: 'Quicksand';
@@ -310,10 +302,14 @@ hr.small {
 
 /* Portfolio */
 
+
+
+
+
 .portfolio {
-    padding: 50px 0;
-    height: 100%;
-    background-color: #000;
+    padding: 50px;
+    position: relative;
+    width: 100%;
 }
 
 .portfolio-item {
@@ -328,11 +324,37 @@ hr.small {
     opacity: 0.8;
 }
 
+.grid{
+    width: 100%;
+    height: 100%; 
+}
+
 /* Map */
 
 .map {
     height: 75%;
     background-color: #000;
+}
+
+#work{
+    position: relative;
+    width: inherit;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+#work h1{
+    font-size: 80px;
+    font-weight: 100;
+    font-family: 'Quicksand';
+    font-weight: 300;
+}
+
+.project{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background: #666666;
 }
 
 @media(max-width:768px) {
@@ -352,10 +374,8 @@ hr.small {
     }
     .text-vertical-left-top h1{
         font-size: 50px;
-
         vertical-align: center;
-        left: auto;
-
+        padding: auto;
     }
 }
 
@@ -363,6 +383,10 @@ hr.small {
 
     .text-vertical-left-top h1{
         font-size: 50px;
+        font-weight: 300;
+    }
+    .callout {
+        height: 30%;
     }
 }
 
@@ -372,3 +396,24 @@ footer {
     margin: 50px;
     height: 25%;
 }
+
+li{
+  list-style-type: none;
+}
+
+#draft {
+  background: url('../img/draft.png') top center no-repeat scroll;
+}
+.dr {
+  background: url('../img/portfolio-4.jpg') top center no-repeat scroll;
+}
+
+.ms {
+  background: url('../img/portfolio-2.jpg') top center no-repeat scroll;
+}
+
+.jd {
+  background: url('../img/portfolio-1.jpg') top center no-repeat scroll;
+}
+
+

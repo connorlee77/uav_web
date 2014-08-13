@@ -78,27 +78,38 @@
        
         <!-- Banner -->
 
-        <aside class="callout">
+        <div class="callout">
             <div class="text-vertical-left-top">
                 <h1>Think. Design. Code. </h1>
             </div>
-        </aside>
+        </div>
 
 
 
 
         <!-- Portfolio -->
-        <div id="portfolio" class="portfolio section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1 text-center">
-                       
-                    </div>
-                    <!-- /.col-lg-10 -->
-                </div>
-                <!-- /.row -->
+        <div id="portfolio" class="portfolio section ">
+            <div id='work'>
+                <h1>Our work</h1>
             </div>
-            <!-- /.container -->
+            <div class="gridster">
+                <ul>
+                    <li id='draft' data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+                    </li>
+
+                    <li class="jd" data-row="3" data-col="1" data-sizex="2" data-sizey="1"></li>
+             
+                    <li class="jd" data-row="1" data-col="3" data-sizex="2" data-sizey="1"></li>
+                    <li class="dr" data-row="2" data-col="3" data-sizex="2" data-sizey="2"></li>
+             
+                    <li class="ms" data-row="1" data-col="5" data-sizex="2" data-sizey="1"></li>
+                    <li class="dr" data-row="2" data-col="5" data-sizex="1" data-sizey="1"></li>
+                    <li class="ms" data-row="3" data-col="5" data-sizex="1" data-sizey="1"></li>
+
+                    <li class="dr" data-row="2" data-col="6" data-sizex="1" data-sizey="2"></li>
+                </ul>
+
+            </div>
         </div>
 
 
@@ -165,6 +176,8 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.transit.min.js"></script>
     <script src="js/jquery.gridster.min.js"></script>
+    <script src="js/jquery.gridster.with-extras.js"></script>
+
     <!-- Custom Theme JavaScript -->
     <script>
     // Closes the sidebar menu
@@ -179,12 +192,7 @@
         $("#sidebar-wrapper").toggleClass("active");
     });
 
-    
-
-    // Scrolls to the selected menu item on the page
-   $(function() {
-
-        $('a[href*=#]:not([href=#top],[href=#])').hover(function(){ 
+    $('a[href*=#]:not([href=#top],[href=#])').hover(function(){ 
             $("#uav").css({
                '-ms-transform': 'rotate(90deg)',
                 '-webkit-transform': 'rotate(90deg)', 
@@ -205,6 +213,7 @@
                 'transition': '.3s ease-in',
             });
         });
+        
         $('a[href*=#]:not([href=#])').click(function() {
             $('#uavBox')
             .transition({y: '+=700'}, 700, 'ease');
@@ -214,7 +223,46 @@
                 $('#uavBox').transition({rotate: '0deg'}, 200, 'ease');
             }, 700);
         });
- 
+
+
+    // Scrolls to the selected menu item on the page
+   $(function() {
+
+        if($(window).width() > 1400){
+            $(".gridster ul").gridster({
+                widget_margins: [10, 10],
+                widget_base_dimensions: [200, 200],
+                resize: {
+                    enabled: true,
+                    max_size: [4,2],
+                    min_size: [1,1]
+                },
+                helper: 'clone',
+            }).data('gridster');
+        } else if($(window).width() > 1100) {
+            $(".gridster ul").gridster({
+                widget_margins: [10, 10],
+                widget_base_dimensions: [150, 150],
+                resize: {
+                    enabled: true,
+                    max_size: [4,2],
+                    min_size: [1,1]
+                },
+                helper: 'clone',
+            }).data('gridster');
+        } else {
+            $(".gridster ul").gridster({
+                widget_margins: [10, 10],
+                widget_base_dimensions: [100, 100],
+                resize: {
+                    enabled: true,
+                    max_size: [4,2],
+                    min_size: [1,1]
+                },
+                helper: 'clone',
+            }).data('gridster');
+        }
+
         $('a[href*=#]:not([href=#])').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
