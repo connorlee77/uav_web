@@ -16,7 +16,6 @@
 
     <!-- Custom CSS -->
     <link href="css/uav.css" rel="stylesheet">
-    <link href="css/jquery.gridster.min.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400|Raleway:400,100,200,300' rel='stylesheet' type='text/css'>
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -78,38 +77,39 @@
        
         <!-- Banner -->
 
-        <div class="callout">
-            <div class="text-vertical-left-top">
-                <h1>Think. Design. Code. </h1>
-            </div>
-        </div>
 
 
 
 
         <!-- Portfolio -->
         <div id="portfolio" class="portfolio section ">
-            <div id='work'>
-                <h1>Our work</h1>
+            
+            <div class="callout">
+                <div class="text-vertical-left-top">
+                    <h1>Think. Design. Create. </h1>
+                </div>
             </div>
-            <div class="gridster">
-                <ul>
-                    <li id='draft' data-row="1" data-col="1" data-sizex="2" data-sizey="2">
-                    </li>
-
-                    <li class="jd" data-row="3" data-col="1" data-sizex="2" data-sizey="1"></li>
-             
-                    <li class="jd" data-row="1" data-col="3" data-sizex="2" data-sizey="1"></li>
-                    <li class="dr" data-row="2" data-col="3" data-sizex="2" data-sizey="2"></li>
-             
-                    <li class="ms" data-row="1" data-col="5" data-sizex="2" data-sizey="1"></li>
-                    <li class="dr" data-row="2" data-col="5" data-sizex="1" data-sizey="1"></li>
-                    <li class="ms" data-row="3" data-col="5" data-sizex="1" data-sizey="1"></li>
-
-                    <li class="dr" data-row="2" data-col="6" data-sizex="1" data-sizey="2"></li>
-                </ul>
-
+            
+            <div class="callout2">
+                <div class="text-vertical-left-top">
+                    <h1>OpenCV </h1>
+                </div>
             </div>
+
+            <div class="callout3">
+                <div class="text-vertical-right-top">
+                    <h1>Parrot AR </h1>
+                </div>
+            </div>
+            
+            <div class="callout1">
+                <div class="text-vertical-left-top">
+                    <h1>CAD + Engineering</h1>
+                </div>
+            </div>
+
+
+            
         </div>
 
 
@@ -119,9 +119,35 @@
         <div id="about" class="about section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
+                    <div class="col-lg-12 text-vertical-center">
                        
+                            <h1>The Team</h1>
+                             
                     </div>
+
+                    
+                    <div class="col-lg-10 col-lg-offset-1">
+                       
+                        <div style="background: #000;" class='col-lg-2 col-lg-offset-1 profile'>
+                        </div>
+                        
+                        <div style="background: #F00;" class='col-lg-2 profile'>
+                        </div>
+
+                        <div style="background: #000;" class='col-lg-2 profile'>
+                        </div>
+                        
+                        <div style="background: #F00;" class='col-lg-2 profile'>
+                        </div>
+
+                        <div style="background: #000;" class='col-lg-2 profile'>
+                        </div>
+                        
+                        
+
+                    </div>
+                    
+                
                 </div>
                 <!-- /.row -->
             </div>
@@ -131,39 +157,24 @@
        
 
         
-   
-        <!-- Map -->
-        <div id="contact" class="map section">
-            
-        </div>
-
+ 
     <!-- Footer -->
     <footer>
-        <div class="container section">
+        <div id='contact' class="container section">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Start Bootstrap</strong>
+                    <h4><strong>Caltech UAV Engineering</strong>
                     </h4>
-                    <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+                    <p>1200 E California Blvd<br>Pasadena, CA 91125</p>
+
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">name@example.com</a>
+
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:clee@caltech.edu">caltechUAV@caltech.edu</a>
                         </li>
                     </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
+
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; Your Website 2014</p>
+
                 </div>
             </div>
         </div>
@@ -175,8 +186,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.transit.min.js"></script>
-    <script src="js/jquery.gridster.min.js"></script>
-    <script src="js/jquery.gridster.with-extras.js"></script>
+
 
     <!-- Custom Theme JavaScript -->
     <script>
@@ -228,41 +238,6 @@
     // Scrolls to the selected menu item on the page
    $(function() {
 
-        if($(window).width() > 1400){
-            $(".gridster ul").gridster({
-                widget_margins: [10, 10],
-                widget_base_dimensions: [200, 200],
-                resize: {
-                    enabled: true,
-                    max_size: [4,2],
-                    min_size: [1,1]
-                },
-                helper: 'clone',
-            }).data('gridster');
-        } else if($(window).width() > 1100) {
-            $(".gridster ul").gridster({
-                widget_margins: [10, 10],
-                widget_base_dimensions: [150, 150],
-                resize: {
-                    enabled: true,
-                    max_size: [4,2],
-                    min_size: [1,1]
-                },
-                helper: 'clone',
-            }).data('gridster');
-        } else {
-            $(".gridster ul").gridster({
-                widget_margins: [10, 10],
-                widget_base_dimensions: [100, 100],
-                resize: {
-                    enabled: true,
-                    max_size: [4,2],
-                    min_size: [1,1]
-                },
-                helper: 'clone',
-            }).data('gridster');
-        }
-
         $('a[href*=#]:not([href=#])').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
@@ -273,7 +248,7 @@
                 if (target.length) {
                     $('html,body').animate({
                         scrollTop: target.offset().top
-                    }, 1200);
+                    }, 1000);
 
                     return false;
                 }

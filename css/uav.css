@@ -99,6 +99,26 @@ body {
     padding: 0;
     padding-left: 10%;
 }
+
+.text-vertical-right-top {
+    position: relative;
+    display: table-cell;
+    top: 20%;
+    text-align: right;
+    vertical-align: top;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-right: 10%;
+}
+
+.text-vertical-right-top h1{ 
+    font-size: 80px;
+    font-weight: 100;
+    font-family: 'Quicksand';
+    font-weight: 300;
+}
+
 .text-vertical-left-top h1{ 
     font-size: 80px;
     font-weight: 100;
@@ -264,7 +284,7 @@ hr.small {
 .callout {
     display: table;
     width: 100%;
-    height: 400px;
+    height: 25%;
     color: #fff;
     background: url('../img/drone.jpg') no-repeat center center scroll;
     -webkit-background-size: cover;
@@ -273,6 +293,47 @@ hr.small {
     -o-background-size: cover;
     position: relative;
 }
+
+
+.callout1 {
+    display: table;
+    width: 100%;
+    height: 25%;
+    color: #fff;
+    background: url('../img/hawk.jpg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+}
+
+.callout2 {
+    display: table;
+    width: 100%;
+    height: 25%;
+    color: #fff;
+    background: url('../img/opencv.jpg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+}
+
+.callout3 {
+    display: table;
+    width: 100%;
+    height: 25%;
+    color: #fff;
+    background: url('../img/parrot.jpg') no-repeat 0px -50px scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+}
+
 
 /* About */
 
@@ -288,16 +349,10 @@ hr.small {
     -o-background-size: cover;
 }
 
-/* Services */
+.profile {
+    height: 100px;
 
-.services {
-    padding: 50px 0;
 }
-
-.service-item {
-    margin-bottom: 30px;
-}
-
 
 
 /* Portfolio */
@@ -307,27 +362,16 @@ hr.small {
 
 
 .portfolio {
-    padding: 50px;
     position: relative;
+    height: 100%;
     width: 100%;
-}
-
-.portfolio-item {
-    margin-bottom: 30px;
-}
-
-.img-portfolio {
-    margin: 0 auto;
+    background-color: #fff;
 }
 
 .img-portfolio:hover {
     opacity: 0.8;
 }
 
-.grid{
-    width: 100%;
-    height: 100%; 
-}
 
 /* Map */
 
@@ -341,7 +385,7 @@ hr.small {
     width: inherit;
     margin: auto;
     text-align: center;
-    padding-bottom: 50px;
+    background-color: inherit;
 }
 #work h1{
     font-size: 80px;
@@ -377,6 +421,12 @@ hr.small {
         vertical-align: center;
         padding: auto;
     }
+
+    .text-vertical-right-top h1{ 
+        font-size: 50px;
+        vertical-align: center;
+        padding: auto;
+    }
 }
 
 @media(max-width:1400px) {
@@ -385,9 +435,11 @@ hr.small {
         font-size: 50px;
         font-weight: 300;
     }
-    .callout {
-        height: 30%;
+    .text-vertical-right-top h1{ 
+        font-size: 50px;
+        font-weight: 300;
     }
+
 }
 
 /* Footer */
