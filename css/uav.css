@@ -85,7 +85,7 @@ body{
 }
 
 body {
-    font-family: "Raleway", "Quicksand", sans-serif;
+    font-family: "Quicksand", "Raleway",  sans-serif;
 }
 
 .text-vertical-left-top {
@@ -116,14 +116,12 @@ body {
     font-size: 80px;
     font-weight: 100;
     font-family: 'Quicksand';
-    font-weight: 300;
 }
 
 .text-vertical-left-top h1{ 
     font-size: 80px;
     font-weight: 100;
     font-family: 'Quicksand';
-    font-weight: 300;
 }
 
 .text-vertical-center {
@@ -284,7 +282,7 @@ hr.small {
 .callout {
     display: table;
     width: 100%;
-    height: 25%;
+    height: 33%;
     color: #fff;
     background: url('../img/drone.jpg') no-repeat center center scroll;
     -webkit-background-size: cover;
@@ -295,63 +293,84 @@ hr.small {
 }
 
 
-.callout1 {
-    display: table;
-    width: 100%;
-    height: 25%;
-    color: #fff;
-    background: url('../img/hawk.jpg') no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    position: relative;
-}
 
-.callout2 {
-    display: table;
-    width: 100%;
-    height: 25%;
-    color: #fff;
-    background: url('../img/opencv.jpg') no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    position: relative;
-}
-
-.callout3 {
-    display: table;
-    width: 100%;
-    height: 25%;
-    color: #fff;
-    background: url('../img/parrot.jpg') no-repeat 0px -50px scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    position: relative;
-}
 
 
 /* About */
 
 .about {
-    padding: 50px 0;
+    padding: 30px 0;
     position: relative;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     background: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    text-align: center
 }
 
-.profile {
-    height: 100px;
+.headContainer {
+    margin-bottom: 30px;
 
+}
+.aboutHead {
+    margin: 0 auto;
+}
+
+.round {
+    position: relative;
+    border-radius: 50%;
+    width: 135px;
+    height: 135px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    
+}
+
+#connor {
+    background: url('../img/connor.jpg') 290px 195px;
+    background-size: 150px;
+}
+
+#parth {
+    background: url('../img/parth.jpg') 310px 195px;
+    background-size: 170px;
+}
+
+#jean {
+    background: url('../img/jean.jpg') 320px 180px;
+    background-size: 170px;
+}
+
+#david {
+    background: url('../img/david.jpg') 290px 195px;
+    background-size: 150px;
+}
+
+#matt {
+    background: url('../img/matt.jpg') 290px 180px;
+    background-size: 150px;
+}
+
+
+.title h5 {
+
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Quicksand';
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+.title h4 {
+    padding-top: 10px;
+    margin-bottom: -5px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Quicksand';
 }
 
 
@@ -363,6 +382,7 @@ hr.small {
 
 .portfolio {
     position: relative;
+    padding: 30px 0;
     height: 100%;
     width: 100%;
     background-color: #fff;
