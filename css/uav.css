@@ -1,6 +1,7 @@
 @import url(project.css);
 @import url(profile.css);
-
+@import url(modals.css);
+@import url(about.css);
 /* Global Styles */
 a {
     -webkit-transition: all .2s ease-in-out;
@@ -299,9 +300,9 @@ hr.small {
 
 
 
-/* About */
+/* Team */
 
-.about {
+.team {
     padding: 30px 0;
     position: relative;
     width: 100%;
@@ -356,7 +357,9 @@ hr.small {
 /* Portfolio */
 
 
-
+.center {
+  text-align: center;
+}
 
 
 .portfolio {
@@ -365,10 +368,6 @@ hr.small {
     height: 100%;
     width: 100%;
     background-color: #fff;
-}
-
-.img-portfolio:hover {
-    opacity: 0.8;
 }
 
 
@@ -444,12 +443,8 @@ hr.small {
 /* Footer */
 
 footer {
-    margin: 50px;
-    height: 25%;
+    height: 90%;
 }
 
-li{
-  list-style-type: none;
-}
 
 
