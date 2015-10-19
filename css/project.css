@@ -1,0 +1,20 @@
+.project-jobs {
+	height: 300px;
+}
+
+.project-frame {
+	margin: auto;
+	height: 270px;
+	width: 260px;
+}
+
+.soon {
+	margin: auto;
+	background-color: #eeeeee;
+	opacity: 1;
+}
+
+
+.project-row {
+	margin-top: 30px; 
+}
