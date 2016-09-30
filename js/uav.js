@@ -79,3 +79,14 @@ $('#message').on('keyup', function() {
 $('#me100-overlay').on('click', function() {
     $('#me100-2014-modal').modal();
 });
+
+
+$('#landing-overlay').on('click', function() {
+    $('#me100-2015-landing-modal').modal();
+});
+
+
+$('#se-overlay').on('click', function() {
+    window.open('https://docs.google.com/document/d/1S4WXv7m8A-D75CFxS6QGtr2gaCGJGhpvjVT1wmEZ-Eo/edit?usp=sharing', '_blank');
+});
+

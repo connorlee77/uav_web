@@ -47,6 +47,9 @@
                 <a href="#team">Team</a>
             </li>
             <li>
+                <a href="#sponsors">Sponsors</a>
+            </li>
+            <li>
                 <a href="#contact">Contact</a>
             </li>
         </ul>
@@ -84,13 +87,25 @@
                     </div>
                 </div>
                 <div class='col-md-5 project-jobs '>
-                    <div class='project-frame soon'>
+                    <div id='landing-2016' class='project-frame'>
                     </div>
-                    <div class='project-overlay'>
-                        <h5 class='new-project'>Coming soon!</h5>
+                    <div id='landing-overlay' class='project-overlay'>
+                        <h5 class='new-project'>Adaptive Landing Gear</h5>
                     </div>
                 </div>
             </div>
+
+            <div class='row project-row'>
+                <div class='col-md-5 col-md-offset-1 project-jobs'>
+                    <div id='se-2015' class='project-frame'>
+                    </div>
+                    <div id='se-overlay' class='project-overlay'>
+                        <h5 class='new-project'>AR.drone State Estimation</h5>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </div>
     <div class="modal fade" id='me100-2014-modal' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -113,6 +128,35 @@
                         </div>
                         <div class='col-md-5'>
                             <iframe width="420" height="315" src="https://www.youtube.com/embed/SoAmE_ZX4yU" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <div class="modal fade" id='me100-2015-landing-modal' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body container">
+                    <div class='row modal-header-row'>
+                        <div class="col-md-12 text-vertical-center" class="headContainer">
+                            <h2>Adaptive Landing Gear</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1">
+                            <p> The active landing gear was designed to function for large slopes, up to and potentially beyond 30 degrees.  The central concept was to have four equally spaced legs that extend and contract to different lengths to match the terrain below and keep the plane of the drone level when landing.  We determine how long each leg needs to be extended by utilizing pressure sensors on the foot of each leg which detect when the foot has made contact with the surface.  When one foot hits the ground, the drone hovers at that altitude, while the other legs extend out until they too contact the surface.  When all four legs are touching the ground, the drone can shut off its motors and rest on the landing gear. A full report of this project is available 
+                            <a target="_blank" href="https://docs.google.com/document/d/1S4WXv7m8A-D75CFxS6QGtr2gaCGJGhpvjVT1wmEZ-Eo/edit?usp=sharing">here</a>.</p>
+                        </div>
+                        <div class='col-md-5'>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/EI-OsLDHRHw" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -170,16 +214,6 @@
                 </div>
                 <div class='col-md-2 profile '>
                     <div class="row">
-                        <div class="round" id="jean">
-                        </div>
-                        <div class="title">
-                            <h4>Jean Turban</h4>
-                            <h5>VP of development, co-founder</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class='col-md-2 profile '>
-                    <div class="row">
                         <div class="round" id="nick">
                         </div>
                         <div class="title">
@@ -195,6 +229,15 @@
                         <div class="title">
                             <h4>Chris Bradley</h4>
                             <h5>VP of design,<br> co-founder</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-md-2 profile '>
+                    <div class="row">
+                        <div class="round" id="tim">
+                        </div>
+                        <div class="title">
+                            <h4>Tim Menninger</h4>
                         </div>
                     </div>
                 </div>
@@ -221,17 +264,69 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-xs-12 text-vertical-center" class="headContainer">
+                    <h2 class="aboutHead">Alumni</h2>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-2 col-md-offset-1 profile '>
+                    <div class="row">
+                        <div class="round" id="jean">
+                        </div>
+                        <div class="title">
+                            <h4>Jean Turban</h4>
+                            <h5>co-founder</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-md-2 profile '>
+                    <div class="row">
+                        <div class="round" id="daniel">
+                        </div>
+                        <div class="title">
+                            <h4>Yongkyun Lee</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- /.row -->
         <!-- /.container -->
     </div>
-    <div id="sponsers" class="section">
+    <div id="sponsors" class="section">
+        <div class='container'>
+            <div class="row">
+                <div class="col-xs-12 text-vertical-center" class="headContainer">
+                    <h1 class="aboutHead">Sponsors</h1>
+                </div>
+            </div>
+            <div class='row sponsor-row'>
+                <div class="mega tier">
+                    <a href="http://www.jpl.nasa.gov/" target="_blank"> 
+                        <img src="img/jpl.png">
+                    </a>
+                    <a href="https://www.bhphotovideo.com/" target="_blank"> 
+                        <img src="img/bh.jpg">
+                    </a>
+                    <a href="http://lsvp.com/" target="_blank"> 
+                        <img src="img/lightspeed.png">
+                    </a>
+                    <a href="http://www.kairossociety.com/" target="_blank"> 
+                        <img src="img/kairos.png">
+                    </a>
+                    <a href="http://www.alumni.caltech.edu/" target="_blank"> 
+                        <img src="img/alumni.png">
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Footer -->
     <footer>
         <div id='contact' class="container section">
             <form role="form" action="http://www.its.caltech.edu/cgi-bin/metafeedback">
-                <input type="hidden" name="to" value="clee@caltech.edu, pshah@caltech.edu, jturban@caltech.edu, cbradley@caltech.edu, Nbuonico@caltech.edu">
+                <input type="hidden" name="to" value="clee@caltech.edu, pshah@caltech.edu, cbradley@caltech.edu, Nbuonico@caltech.edu">
                 <!-- Metafeedback for Caltech IMSS hosting -->
                 
                 <INPUT TYPE="hidden" NAME="printTimestamp">
